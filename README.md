@@ -154,7 +154,7 @@ LEFT JOIN ranked r ON gf.CampaignId = r.CampaignId;
 
 - Создать представление `rk_clients_href ()`
 
-# Код:
+### Код:
 
 ```sql
 -- Создаём / переопределяем представление с нужными полями
