@@ -15,7 +15,16 @@
 
 В коде `<DB>` заменить на название БД и заменить цели.
 
-# Код:
+Найти все конверсии (`<DB>` заменить):
+
+```sql
+SELECT name
+FROM system.columns
+WHERE database = '<DB>' AND
+table = 'general_full' AND name LIKE 'Conversions%';
+```
+
+### Основной код:
 
 ```sql
 
@@ -139,15 +148,6 @@ SELECT
     CAST(r.activity_rank AS Nullable(UInt32)) AS activity_rank
 FROM <DB>.general_full gf
 LEFT JOIN ranked r ON gf.CampaignId = r.CampaignId;
-```
-
-Найти все конверсии (`<DB>` заменить):
-
-```sql
-SELECT name
-FROM system.columns
-WHERE database = '<DB>' AND
-table = 'general_full' AND name LIKE 'Conversions%';
 ```
 
 Таблица преобразования целей: [ссылка](https://docs.google.com/spreadsheets/d/1SvNoSatRwc5pO7gxRiU-9mfSsuGpwC3molNbAR7xlYA/edit?usp=sharing)
