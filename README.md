@@ -102,9 +102,7 @@ FROM system.columns
 WHERE database = '<DB>'
 AND table = 'general_full'
 AND name LIKE 'Conversions_%';
-```
 
-```sql
 CREATE OR REPLACE VIEW <DB>.general_full_with_rank_and_meta_clean AS
 ...
 CAST(r.activity_rank AS Nullable(UInt32)) AS activity_rank
