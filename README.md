@@ -139,13 +139,9 @@ SELECT
     CAST(gf.MatchType AS Nullable(String)) AS MatchType,
     CAST(gf.MobilePlatform AS Nullable(String)) AS MobilePlatform,
     (
-        ifNull(gf.Conversions_310375038_AUTO, 0) +
-        ifNull(gf.Conversions_338617666_AUTO, 0) +
-        ifNull(gf.Conversions_320855535_AUTO, 0) +
-        ifNull(gf.Conversions_339131327_AUTO, 0) +
-        ifNull(gf.Conversions_344180397_AUTO, 0) +
-        ifNull(gf.Conversions_345222163_AUTO, 0) +
-        ifNull(gf.Conversions_344168214_AUTO, 0)
+        ifNull(gf.Conversions_310375038_AUTO, 0) + --заменить
+        ifNull(gf.Conversions_338617666_AUTO, 0) + --заменить
+        ifNull(gf.Conversions_344168214_AUTO, 0) --заменить
     ) AS sum_conversions,
     CAST(r.activity_rank AS Nullable(UInt32)) AS activity_rank
 FROM <DB>.general_full gf
