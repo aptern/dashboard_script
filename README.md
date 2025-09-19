@@ -24,6 +24,8 @@ WHERE database = '<DB>' AND
 table = 'general_full' AND name LIKE 'Conversions%';
 ```
 
+Таблица преобразования целей: [ссылка](https://docs.google.com/spreadsheets/d/1SvNoSatRwc5pO7gxRiU-9mfSsuGpwC3molNbAR7xlYA/edit?usp=sharing)
+
 ### Основной код:
 
 ```sql
@@ -149,8 +151,6 @@ SELECT
 FROM <DB>.general_full gf
 LEFT JOIN ranked r ON gf.CampaignId = r.CampaignId;
 ```
-
-Таблица преобразования целей: [ссылка](https://docs.google.com/spreadsheets/d/1SvNoSatRwc5pO7gxRiU-9mfSsuGpwC3molNbAR7xlYA/edit?usp=sharing)
 
 - Создать представление `rk_clients_href ()`
 
