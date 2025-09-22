@@ -185,7 +185,9 @@ ifNull(Conversions_45360578_AUTO, 0) --заменить
 - скорректировать Датасет (заменить таблицы)
   *важно сначала удалить все таблицы, потом выставить новые в таком же виде. Главное в последнюю очередь добавлють ту что мэтчится по LEFT JOIN*
 - Не забыть выставить корректные поля для JOINов
-<img width="1018" height="524" alt="image" src="https://github.com/user-attachments/assets/da0e1a1a-7157-4751-ba7b-c607377515d3" />
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/da0e1a1a-7157-4751-ba7b-c607377515d3" />
+<img width="500" alt="2025-09-22_13-58-33" src="https://github.com/user-attachments/assets/f87ea45b-779e-4ea7-a181-96bdef240f00" />
+
 
 
   
