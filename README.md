@@ -168,6 +168,16 @@ SELECT
   TextAd_VideoExtension_ThumbnailUrl
 FROM <DB>.rk_CLIENTS;
 ```
+- Добавить `sum_conversions` в `poisk_zapros`
+
+```sql
+ALTER TABLE <DB>.poisk_zapros 
+ADD COLUMN sum_conversions Float64 MATERIALIZED (
+ifNull(Conversions_45360578_AUTO, 0) --заменить
++ ifNull(Conversions_53024271_AUTO, 0) --заменить
++ ifNull(Conversions_357775797_AUTO, 0) --заменить
+);
+```
 
 ## 3. DataLens
 
