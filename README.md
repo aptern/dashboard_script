@@ -138,6 +138,7 @@ SELECT
     CAST(gf.LocationOfPresenceName AS Nullable(String)) AS LocationOfPresenceName,
     CAST(gf.MatchType AS Nullable(String)) AS MatchType,
     CAST(gf.MobilePlatform AS Nullable(String)) AS MobilePlatform,
+    CAST(gf.Slot AS Nullable(String)) AS Slot,
     (
         ifNull(gf.Conversions_310375038_AUTO, 0) + --заменить
         ifNull(gf.Conversions_338617666_AUTO, 0) + --заменить
