@@ -139,6 +139,8 @@ SELECT
     CAST(gf.MatchType AS Nullable(String)) AS MatchType,
     CAST(gf.MobilePlatform AS Nullable(String)) AS MobilePlatform,
     CAST(gf.Slot AS Nullable(String)) AS Slot,
+    CAST(gf.Placement AS Nullable(String)) AS Placement,
+    CAST(gf.AccountId AS Nullable(UInt64)) AS AccountId,
     (
         ifNull(gf.Conversions_310375038_AUTO, 0) + --заменить
         ifNull(gf.Conversions_338617666_AUTO, 0) + --заменить
