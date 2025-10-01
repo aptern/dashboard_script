@@ -140,6 +140,9 @@ SELECT
     CAST(gf.MobilePlatform AS Nullable(String)) AS MobilePlatform,
     CAST(gf.Slot AS Nullable(String)) AS Slot,
     CAST(gf.Placement AS Nullable(String)) AS Placement,
+    CAST(gf.TargetingCategory AS Nullable(String)) AS TargetingCategory,
+    CAST(gf.TargetingLocationId AS Nullable(String)) AS TargetingLocationId,
+    CAST(gf.TargetingLocationName AS Nullable(String)) AS TargetingLocationName,
     CAST(gf.AccountId AS Nullable(UInt64)) AS AccountId,
     (
         ifNull(gf.Conversions_310375038_AUTO, 0) + --заменить
